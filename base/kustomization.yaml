@@ -2,18 +2,18 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - namespace.yaml
-  - serviceaccounts.yaml
-  - services.yaml
-  - configmap.yaml
-  - deployments.yaml
+- namespace.yaml
+- serviceaccounts.yaml
+- services.yaml
+- configmap.yaml
+- deployments.yaml
 
 images:
-  - name: <AWS_ACCOUNT_ID>.dkr.ecr.ap-northeast-2.amazonaws.com/iot-streaming-platform/ingestion-api
-    newTag: latest
-  - name: <AWS_ACCOUNT_ID>.dkr.ecr.ap-northeast-2.amazonaws.com/iot-streaming-platform/read-api
-    newTag: latest
-  - name: <AWS_ACCOUNT_ID>.dkr.ecr.ap-northeast-2.amazonaws.com/iot-streaming-platform/stream-processor
-    newTag: latest
-  - name: <AWS_ACCOUNT_ID>.dkr.ecr.ap-northeast-2.amazonaws.com/iot-streaming-platform/alerting-service
-    newTag: latest
+- name: 130954244866.dkr.ecr.ap-northeast-2.amazonaws.com/iot-streaming-platform/alerting-service
+  newTag: 24953d6e89aa71130d1719070ddbb7b97fb9349d
+- name: 130954244866.dkr.ecr.ap-northeast-2.amazonaws.com/iot-streaming-platform/ingestion-api
+  newTag: 24953d6e89aa71130d1719070ddbb7b97fb9349d
+- name: 130954244866.dkr.ecr.ap-northeast-2.amazonaws.com/iot-streaming-platform/read-api
+  newTag: 24953d6e89aa71130d1719070ddbb7b97fb9349d
+- name: 130954244866.dkr.ecr.ap-northeast-2.amazonaws.com/iot-streaming-platform/stream-processor
+  newTag: 24953d6e89aa71130d1719070ddbb7b97fb9349d
