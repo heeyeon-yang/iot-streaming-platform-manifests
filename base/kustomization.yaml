@@ -7,7 +7,6 @@ resources:
 - services.yaml
 - configmap.yaml
 - deployments.yaml
-- secret-alerting.yaml
 
 images:
 - name: 130954244866.dkr.ecr.ap-northeast-2.amazonaws.com/iot-streaming-platform/alerting-service
